@@ -4,7 +4,6 @@
 
 /* if you were to change the card-item width change it  in line grid-template-columns too */
 .project-container{
-  background-color: beige;
   height: auto;
   width: 100%;
   margin: 15px auto;
