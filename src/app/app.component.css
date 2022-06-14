@@ -5,3 +5,9 @@
 .flex-column{
     flex-direction: column;
 }
+
+.container{
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,18 @@
+.nav-list{
+    position: absolute;
+    top: 5%;
+    /* left: 80%; */
+    width: 100%;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: end;
+}
+.nav-list ul li{
+    display: inline;
+    margin-right: 3%;
+}
+.nav-list ul li a{
+    color: rgb(238, 246, 253);
+}

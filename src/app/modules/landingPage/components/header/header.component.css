@@ -1,0 +1,118 @@
+
+.header-section{
+    position: relative;
+    background-color: black;
+    height: 45rem;
+}
+
+.header-section img{
+    width: 100%;
+    height: 45rem;
+    opacity: 0.4;
+}
+.header-content{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: aliceblue;
+}
+
+.header-content input{
+    border-radius: 10%;
+}
+
+.nav-list span a{
+    color:#fdf7f7;
+    margin-right: 2%;
+}
+.book-a-table-marker{
+    position: fixed;
+    transform: rotate3d(10, 45,500, 271deg);
+    top: 20%;
+    left: 94%;
+    background-color: #fdf7f7;
+    width: 10%;
+    text-align: center;
+}
+.search-box{
+    border-radius: 1rem;
+    height: 6vh;
+    width: 40%;
+    background-color:white;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.restaurant-location{
+    width: 20%;
+}
+.search-restaurant-box{
+    width:60% ;
+}
+
+.search-box img{
+    height: 80%;
+    width: 5%;
+}
+.search-box input,button{
+    border: none;
+    background-color: white;
+}
+.search-box input{
+    position: relative;
+    outline: none;
+    width: 90%;
+
+}
+.location-button{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+.location-button:hover{
+ border: 1px solid grey;
+ border-radius: 1rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* .light-mode{
+    background-color: white;
+    color: black;
+}
+.dark-mode{
+    background-color: rgb(62, 62, 62);
+    color: #fdf7f7;
+} */
+.mode-toggle-button img{
+    width:3%;
+    height:8%;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 600px) {
+    .search-box{
+        width: 90%;
+        left: 5%;
+        height: 8vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .search-box{
+        width: 80%;
+        left: 10%;
+        height: 7vh;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .search-box{
+        width: 70%;
+        left: 15%;
+    }
+}

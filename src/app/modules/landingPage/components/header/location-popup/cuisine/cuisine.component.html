@@ -1,0 +1,18 @@
+<div class="pop-up">
+    <h1> Select your city </h1>
+    <button class="close-button" (click)="closeDialog()">X</button>
+
+    <div class="search-box-city">
+        <img src="assets/images/searchIcon.png" alt="searchIcon" style="width:5%;height:70%;margin-left: 2%;">
+        <input type="text" placeholder="Search" >
+    </div>
+    
+    <div class="cuisine-list-container">
+    <div class="cuisine-list">
+        <button *ngFor="let cuisine of cuisinesList" style="flex:0 0 20%">{{cuisine}}</button>
+    </div></div>
+   
+    <div class="Lets-go-button">
+        <button (click)="closeDialog()"> Let's go</button>
+    </div>
+</div>

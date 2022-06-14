@@ -1,0 +1,18 @@
+ .city-list img{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border: 1px solid rgba(99, 89, 89, 0.333);
+    border-radius: 1rem;
+}
+.city-list{
+    outline: none;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    height: 100%;
+    background-color: white;
+}
+.city-list img:hover{
+    border: 3px solid rgba(99, 89, 89, 0.333);
+}

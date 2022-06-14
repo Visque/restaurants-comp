@@ -1,0 +1,18 @@
+<div class="pop-up">
+    <h1> Select your city </h1>
+    <button (click)="closeDialog()" class="close-button">X</button>
+
+    <div class="search-box-city">
+        <img src="assets/images/searchIcon.png" alt="searchIcon" style="width:5%;height:70%;margin-left: 2%;">
+        <input type="text" placeholder="Search" >
+    </div>
+
+    <div class="select-city-container"> 
+       <app-city></app-city>
+     </div> 
+   
+
+    <div class="Lets-go-button">
+        <button (click)="openDialogcuisine()"> Let's go</button>
+    </div>
+</div>

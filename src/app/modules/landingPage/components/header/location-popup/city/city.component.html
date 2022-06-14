@@ -1,0 +1,5 @@
+<!-- <button class="city-list"><img src="assets/images/newdelhi_icon.PNG" alt="new delhi"></button>  -->
+
+<button class="city-list" *ngFor="let city of cities">
+    <img src="{{city.img}}" alt="{{city.cityname}}">
+</button>

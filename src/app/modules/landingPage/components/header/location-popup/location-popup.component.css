@@ -1,0 +1,62 @@
+.pop-up{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    background-color: white;
+    width: 50%;
+    height: 70vh;
+    border-radius: 2rem;
+}
+.pop-up h1{
+    position: relative;
+    top: 6%;
+    text-align: center;
+}
+.close-button{
+    position: absolute;
+    left: 95%;
+    top: 1%;
+    background-color: white;
+    border: 0px;
+}
+.search-box-city{
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    top: 20%;
+    height: 3rem;
+    border: 1px solid rgba(99, 89, 89, 0.333);
+    border-radius: 20rem ;
+}
+.search-box-city input{
+    height: 100%;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 20rem;
+}
+.Lets-go-button{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Lets-go-button button{
+    background-color: rgb(65, 62, 62);
+    color: white;
+    border-radius: 20rem;
+    width: 30%;
+    height: 5vh;
+}
+.select-city-container{
+    position: relative;
+    top: 25%;
+    height: 27vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.search-box-city:hover{
+    border: 1px solid grey;
+}

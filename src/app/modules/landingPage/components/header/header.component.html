@@ -1,0 +1,38 @@
+<div>
+    <div class="header-section" [class]="mode">
+        <img class="header-image"
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+            alt="header-image">
+
+        <app-navigation-bar></app-navigation-bar>
+
+        <div class="header-content">
+            <h1>Zooked</h1>
+        </div>
+
+        <div class="search-box">
+
+            <div class="location-button">
+                <img src="assets/images/locationIcon.png" alt="Location-icon" style="height:80%;width:15%"
+                    (click)="openDialog()">
+                <button (click)="openDialog()">{{Location}}</button>
+            </div>
+
+            <div style="width:75%;height: 80%;">
+                <img src="assets/images/searchIcon.png" alt="search-icon">
+                <input class="search-restaurant-box" type="text" placeholder="Search for a restaurant around you">
+            </div>
+        </div>
+
+        <div class="book-a-table-marker">
+            <a href="#">
+                <p>Book a Table</p>
+            </a>
+        </div>
+        <!-- <button [class]="mode" (click)="changeMode()">mode</button> -->
+        <div class="mode-toggle-button">
+            <img src="assets/images/darkmode.png" alt="dark-light-mode" [class]="mode" (click)="changeMode()">
+        </div>
+    </div>
+
+</div>
