@@ -32,12 +32,11 @@
 }
 
 .restaurant-img{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   margin: 0 0 auto 0;
 
   min-width: 100%;
-  min-height: 60%;
+  min-height: 65%;
   width: auto;
   height: auto;
 }
@@ -45,9 +44,8 @@
 .restaurant{
     font-size: 0.7em;
     margin: 10px 15px;
-    width: 150px;
-    height: 225px;
+    width: 175px;
+    height: 275px;
     border-radius: 15px;
     justify-content: flex-start;
-    box-shadow: 5px 8px 10px #4f4f4f;
 }
