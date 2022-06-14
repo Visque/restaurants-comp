@@ -1,0 +1,53 @@
+.sub-container{
+  height: auto;
+}
+
+.sub-container > div{
+  margin: 5px;
+}
+
+.card-title{
+  padding: 0 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title h3, p{
+  margin: 0;
+}
+
+.rating-container{
+  justify-content: space-around;
+  align-items: center;
+  background-color: #78C57B;
+  padding: 3px 5px;
+  width: 20%;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.card-location{
+  padding: 0 5px;
+  align-items: center;
+  font-size: small;
+}
+
+.card-tags{
+  padding: 0 10px;
+  font-size: small;
+  align-items: center;
+}
+
+.card-tags > *{
+  margin: 0 4px 0 0;
+  font-size: x-small;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}

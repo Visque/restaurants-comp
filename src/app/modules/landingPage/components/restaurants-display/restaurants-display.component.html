@@ -1,0 +1,5 @@
+
+<div class="grid project-container">
+        <app-restaurant-card class="card-item flex-column {{ mode }}" (onBookTable)="onBookTable($event)" *ngFor="let restaurant of restaurants" [restaurant]="restaurant"  >
+        </app-restaurant-card>
+</div>

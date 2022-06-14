@@ -1,0 +1,19 @@
+<div class="sub-container">
+  <div class="card-title flex">
+    <h3>{{ restaurant.title }}</h3>
+    <div class="rating-container flex">
+        <div class="rating">{{ restaurant.rating }}</div>
+        <img style="height: 15px; width: auto" src="assets/favorite.png" alt="">
+    </div>
+  </div>
+
+    <div class="card-location flex">
+      <img class="image" style="height: 20px; width: auto;" src="assets/locationIcon.png" alt="F hogya">
+      <p>{{ restaurant.location }}</p>
+    </div>
+
+    <!-- *ngFor="let tag in restaurant[tags]" -->
+    <div class="card-tags flex">
+      <p *ngFor="let tag of restaurant.tags" > {{ tag }} </p>
+    </div>
+</div>

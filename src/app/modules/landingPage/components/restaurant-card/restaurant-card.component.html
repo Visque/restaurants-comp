@@ -1,0 +1,13 @@
+
+
+
+<img class="restaurant-img" style="height: auto; width: 100%; margin: 0;" src="{{ restaurant.image }}" alt="">
+
+<app-restaurant-details [restaurant]="restaurant" ></app-restaurant-details>
+
+<div class="button-container">
+  <button (click)="onBookTable.emit( restaurant )" class="book-btn">Book a table</button>
+</div>
+
+
+

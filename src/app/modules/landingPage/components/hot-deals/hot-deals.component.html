@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="title"><h3>Hot Deals</h3></div>
+  <div class="deals flex">
+    <button class="btn left {{ prevUnclickable ? 'unclickable' : '' }}" (click)="onPrev()">
+      <img
+        style="height: 50px; width: auto; margin: 0"
+        src="assets/left.png"
+        alt="F hogya"
+      />
+    </button>
+    <div class="hot-deals flex">
+
+      <div class="restaurant flex-column" *ngFor="let restaurant of tempRestaurants">
+        <img class="restaurant-img" style="height: auto; width: 100%; margin: 0;" src="{{ restaurant.image }}" alt="">
+        <app-restaurant-details size="small" [restaurant]="restaurant">
+        </app-restaurant-details>
+      </div>
+
+    </div>
+    <button class="btn right {{ nextUnclickable ? 'unclickable' : '' }}" (click)="onNext()">
+      <img
+        style="height: 50px; width: auto; margin: 0"
+        src="assets/right.png"
+        alt="F hogya"
+      />
+    </button>
+  </div>
+</div>

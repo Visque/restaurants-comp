@@ -1,0 +1,53 @@
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.unclickable{
+    pointer-events: none;
+}
+
+.unclickable:hover{
+    cursor: not-allowed;
+}
+
+.btn{
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.container{
+    width: min-content;
+    margin: 15px auto;
+}
+
+.title{
+    margin: 0 0 0 10%;
+}
+
+.restaurant-img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 0 auto 0;
+
+  min-width: 100%;
+  min-height: 60%;
+  width: auto;
+  height: auto;
+}
+
+.restaurant{
+    font-size: 0.7em;
+    margin: 10px 15px;
+    width: 150px;
+    height: 225px;
+    border-radius: 15px;
+    justify-content: flex-start;
+    box-shadow: 5px 8px 10px #4f4f4f;
+}
