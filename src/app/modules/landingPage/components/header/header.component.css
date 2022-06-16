@@ -11,15 +11,17 @@
     opacity: 0.4;
 }
 .header-content{
+    color: aliceblue;
     position: absolute;
     top: 40%;
-    left: 45%;
-    color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.header-content input{
+/* .header-content input{
     border-radius: 10%;
-}
+} */
 
 .nav-list span a{
     color:#fdf7f7;
@@ -84,22 +86,13 @@
     width:75%;
     height: 80%;
 }
+.header-content img{
+    opacity: 1;
+    height: 30vh;
+    width: 30%;
+}
 
-/* ----------------------------------------------------------------------------------- */
-/* .light-mode{
-    background-color: white;
-    color: black;
-}
-.dark-mode{
-    background-color: rgb(62, 62, 62);
-    color: #fdf7f7;
-} */
-.mode-toggle-button img{
-    width:3%;
-    height:8%;
-    cursor: pointer;
-    border-radius: 2rem;
-}
+
 /* Media queries for responsiveness */
 
 @media only screen and (max-width: 600px) {
