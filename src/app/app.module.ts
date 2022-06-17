@@ -16,7 +16,6 @@ import { LocationPopupComponent } from './modules/landingPage/components/header/
 import { CityComponent } from './modules/landingPage/components/header/location-popup/city/city.component';
 import { CuisineComponent } from './modules/landingPage/components/header/location-popup/cuisine/cuisine.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
