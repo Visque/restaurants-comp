@@ -9,7 +9,7 @@
     </button>
     <div class="hot-deals flex">
 
-      <div class="restaurant flex-column" *ngFor="let restaurant of tempRestaurants">
+      <div class="restaurant flex-column" *ngFor="let restaurant of HotDealsRestaurants">
         <img class="restaurant-img" style="height: auto; width: 100%; margin: 0;" src="{{ restaurant.image }}" alt="">
         <app-restaurant-details size="small" [restaurant]="restaurant">
         </app-restaurant-details>

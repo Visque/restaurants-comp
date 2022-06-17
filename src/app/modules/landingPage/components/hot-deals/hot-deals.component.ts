@@ -10,7 +10,7 @@ export class HotDealsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-  
+
   restaurants = [
     {
       id: 1,
@@ -72,8 +72,7 @@ export class HotDealsComponent implements OnInit {
   nextUnclickable = false;
   prevUnclickable = true;
 
-
-  tempRestaurants = this.restaurants.slice(this.start, this.start + 4);
+  HotDealsRestaurants = this.restaurants.slice(this.start, this.start + 4);
 
   onNext() {
     if (this.start == this.restaurants.length - 4) {
@@ -83,7 +82,10 @@ export class HotDealsComponent implements OnInit {
     this.prevUnclickable = false;
     this.start++;
     console.log('next');
-    this.tempRestaurants = this.restaurants.slice(this.start, this.start + 4);
+    this.HotDealsRestaurants = this.restaurants.slice(
+      this.start,
+      this.start + 4
+    );
   }
 
   onPrev() {
@@ -94,8 +96,9 @@ export class HotDealsComponent implements OnInit {
     this.nextUnclickable = false;
     this.start--;
     console.log('prev');
-    this.tempRestaurants = this.restaurants.slice(this.start, this.start + 4);
+    this.HotDealsRestaurants = this.restaurants.slice(
+      this.start,
+      this.start + 4
+    );
   }
-
-  
 }
