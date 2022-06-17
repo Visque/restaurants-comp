@@ -96,4 +96,6 @@ export class HotDealsComponent implements OnInit {
     console.log('prev');
     this.tempRestaurants = this.restaurants.slice(this.start, this.start + 4);
   }
+
+  
 }

@@ -1,5 +1,8 @@
 <app-header></app-header>
-<div class="container flex-column">
+<div class="container flex-column" [class]="mode">
+    <div class="mode-toggle-button">
+        <img [src]="imagePath" alt="dark-light-mode" [class]="mode" (click)="changeMode()">
+    </div>
     <app-hot-deals></app-hot-deals>
     <app-restaurants-display></app-restaurants-display>
 </div>

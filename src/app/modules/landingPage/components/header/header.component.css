@@ -2,23 +2,21 @@
 .header-section{
     position: relative;
     background-color: black;
-    height: 45rem;
+    height: 25rem;
 }
 
 .header-section img{
     width: 100%;
-    height: 45rem;
+    height: 25rem;
     opacity: 0.4;
 }
 .header-content{
+    color: aliceblue;
     position: absolute;
     top: 40%;
-    left: 45%;
-    color: aliceblue;
-}
-
-.header-content input{
-    border-radius: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-list span a{
@@ -33,6 +31,8 @@
     background-color: #fdf7f7;
     width: 10%;
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 .search-box{
     border-radius: 1rem;
@@ -40,8 +40,8 @@
     width: 40%;
     background-color:white;
     position: absolute;
-    top: 60%;
-    left: 35%;
+    top: 80%;
+    left: 30%;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -78,22 +78,19 @@
  border: 1px solid grey;
  border-radius: 1rem;
 }
+.search-box-container{
+    display: flex;
+    flex-direction: row;
+    width:75%;
+    height: 80%;
+}
+.header-content img{
+    opacity: 1;
+    height: 30vh;
+    width: 30%;
+}
 
-/* ----------------------------------------------------------------------------------- */
-/* .light-mode{
-    background-color: white;
-    color: black;
-}
-.dark-mode{
-    background-color: rgb(62, 62, 62);
-    color: #fdf7f7;
-} */
-.mode-toggle-button img{
-    width:3%;
-    height:8%;
-    cursor: pointer;
-    border-radius: 2rem;
-}
+
 /* Media queries for responsiveness */
 
 @media only screen and (max-width: 600px) {

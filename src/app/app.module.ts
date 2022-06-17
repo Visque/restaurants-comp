@@ -28,15 +28,16 @@ import { CuisineComponent } from './modules/landingPage/components/header/locati
     NavigationBarComponent,
     LocationPopupComponent,
     CityComponent,
-    CuisineComponent,
+    CuisineComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatDialogModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
+
 export class AppModule {}

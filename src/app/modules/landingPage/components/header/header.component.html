@@ -1,13 +1,11 @@
 <div>
     <div class="header-section" [class]="mode">
-        <img class="header-image"
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
-            alt="header-image">
+        <img class="header-image" src="assets/images/restaurant2.jfif" alt="header-image">
 
         <app-navigation-bar></app-navigation-bar>
 
         <div class="header-content">
-            <h1>Zooked</h1>
+            <img src="assets/images/logo.png" alt="zooked-logo">
         </div>
 
         <div class="search-box">
@@ -18,7 +16,7 @@
                 <button (click)="openDialog()">{{Location}}</button>
             </div>
 
-            <div style="width:75%;height: 80%;">
+            <div class="search-box-container">
                 <img src="assets/images/searchIcon.png" alt="search-icon">
                 <input class="search-restaurant-box" type="text" placeholder="Search for a restaurant around you">
             </div>
@@ -29,10 +27,7 @@
                 <p>Book a Table</p>
             </a>
         </div>
-        <!-- <button [class]="mode" (click)="changeMode()">mode</button> -->
-        <div class="mode-toggle-button">
-            <img src="assets/images/darkmode.png" alt="dark-light-mode" [class]="mode" (click)="changeMode()">
-        </div>
+    
     </div>
 
 </div>

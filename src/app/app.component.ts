@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testing-ang';
+  imagePath="assets/images/darkmode.png";
+  mode='light-mode';
+  changeMode(){
+    this.mode==='light-mode'?this.mode='dark-mode':this.mode='light-mode';
+    if(this.mode=='dark-mode'){
+      this.imagePath="assets/images/lightmode.png"
+    }
+    else{
+      this.imagePath="assets/images/darkmode.png"
+    }
+  }
 }
