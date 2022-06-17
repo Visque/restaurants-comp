@@ -7,12 +7,12 @@
   flex-direction: column;
 }
 
-.light{
+.light-mode{
   background-color: aliceblue;
   color: #1E2225;
 }
 
-.dark{
+.dark-mode{
   background-color: #1E2225;
   color: aliceblue;
 }

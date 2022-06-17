@@ -66,6 +66,33 @@ export class HotDealsComponent implements OnInit {
       image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoog3QpmTpK4TQy-rUzeam_a0IRtDN8TFnEA&usqp=CAU',
     },
+    {
+      id: 1,
+      title: 'title7',
+      location: 'Hauz Khaz',
+      tags: ['#tag1', '#tag2', '#tag3'],
+      rating: '1',
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoog3QpmTpK4TQy-rUzeam_a0IRtDN8TFnEA&usqp=CAU',
+    },
+    {
+      id: 1,
+      title: 'title8',
+      location: 'Hauz Khaz',
+      tags: ['#tag1', '#tag2', '#tag3'],
+      rating: '1',
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoog3QpmTpK4TQy-rUzeam_a0IRtDN8TFnEA&usqp=CAU',
+    },
+    {
+      id: 1,
+      title: 'title9',
+      location: 'Hauz Khaz',
+      tags: ['#tag1', '#tag2', '#tag3'],
+      rating: '1',
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoog3QpmTpK4TQy-rUzeam_a0IRtDN8TFnEA&usqp=CAU',
+    },
   ];
 
   start = 0;

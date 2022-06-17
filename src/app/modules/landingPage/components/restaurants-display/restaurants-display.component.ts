@@ -72,7 +72,8 @@ export class RestaurantsDisplayComponent implements OnInit {
     },
   ];
 
-  mode = 'light';
+
+  mode = 'light-mode';
 
   onBookTable(restaurant: any) {
     console.log(`book a table for user in:`, restaurant);
