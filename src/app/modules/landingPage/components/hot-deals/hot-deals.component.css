@@ -38,9 +38,10 @@
   align-items: flex-start;
 }
 
-.title,
-.title > * {
-  margin: 0 0 0 10px;
+.title{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .deals {
