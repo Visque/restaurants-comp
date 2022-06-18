@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RestaurantsDisplayComponent } from '../restaurants-display/restaurants-display.component';
+import { HostListener } from "@angular/core";
 
 @Component({
   selector: 'app-hot-deals',
@@ -7,9 +8,13 @@ import { RestaurantsDisplayComponent } from '../restaurants-display/restaurants-
   styleUrls: ['./hot-deals.component.css'],
 })
 export class HotDealsComponent implements OnInit {
-  constructor() {}
+  screenWidth: any;
 
-  ngOnInit(): void {}
+  start = 0;
+  nextUnclickable = false;
+  prevUnclickable = true;
+  HotDealsLength = 4;
+  HotDealsRestaurants: any;
 
   restaurants = [
     {
@@ -95,14 +100,42 @@ export class HotDealsComponent implements OnInit {
     },
   ];
 
-  start = 0;
-  nextUnclickable = false;
-  prevUnclickable = true;
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.screenWidth = window.innerWidth;
+    console.log("calling resize");
 
-  HotDealsRestaurants = this.restaurants.slice(this.start, this.start + 4);
+    if (this.screenWidth < 480) {
+      this.HotDealsLength = 1;
+    }
+    if (this.screenWidth > 481 && this.screenWidth < 767) {
+      this.HotDealsLength = 2;
+    }
+    if (this.screenWidth > 768 && this.screenWidth < 1024) {
+      this.HotDealsLength = 3;
+    }
+    if (this.screenWidth > 1025 && this.screenWidth < 1280) {
+      this.HotDealsLength = 4;
+    }
+    if (this.screenWidth > 1281) {
+      this.HotDealsLength = 5;
+    }
+    this.HotDealsRestaurants = this.restaurants.slice(
+      this.start,
+      this.start + this.HotDealsLength
+    );
+  }
+
+  constructor() {
+    this.onResize();
+  }
+
+  ngOnInit(): void {
+    
+  }
 
   onNext() {
-    if (this.start == this.restaurants.length - 4) {
+    if (this.start == this.restaurants.length - this.HotDealsLength) {
       this.nextUnclickable = true;
       return;
     }
@@ -111,7 +144,7 @@ export class HotDealsComponent implements OnInit {
     console.log('next');
     this.HotDealsRestaurants = this.restaurants.slice(
       this.start,
-      this.start + 4
+      this.start + this.HotDealsLength
     );
   }
 
@@ -125,7 +158,7 @@ export class HotDealsComponent implements OnInit {
     console.log('prev');
     this.HotDealsRestaurants = this.restaurants.slice(
       this.start,
-      this.start + 4
+      this.start + this.HotDealsLength
     );
   }
 }

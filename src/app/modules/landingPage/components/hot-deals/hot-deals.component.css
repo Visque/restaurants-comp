@@ -33,7 +33,6 @@
 }
 
 .deals{
-    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -51,8 +50,67 @@
 .restaurant{
     font-size: 0.7em;
     margin: 10px 15px;
-    width: 175px;
-    height: 275px;
     border-radius: 15px;
+    background-color: white;
     justify-content: flex-start;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .restaurant {
+        width: 111px;
+        height: 175px;
+    }
+
+    .deals{
+        width: 10%;
+    }
+}
+    
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .restaurant {
+        width: 126px;
+        height: 200px;
+    }
+
+    .deals{
+        width: 50%;
+    }
+}
+    
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .restaurant {
+        width: 143px;
+        height: 225px;
+    }
+
+    .deals{
+        width: 70%;
+    }
+}
+    
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .restaurant {
+        width: 159px;
+        height: 250px;
+    }
+
+    .deals{
+        width: 90%;
+    }
+}
+    
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .restaurant {
+        width: 175px;
+        height: 275px;
+    }
+
+    .deals{
+        width: 100%;
+    }
 }
