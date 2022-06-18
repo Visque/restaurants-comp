@@ -37,6 +37,17 @@
 }
 
 
+.light-mode{
+  background-color: aliceblue;
+  color: #1E2225;
+}
+
+.dark-mode{
+  background-color: #1E2225;
+  color: aliceblue;
+}
+
+
 /* @media  screen and (max-width: 480px) {
   .project-container{
     width: 100%;

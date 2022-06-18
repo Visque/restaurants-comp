@@ -7,16 +7,6 @@
   flex-direction: column;
 }
 
-.light-mode{
-  background-color: aliceblue;
-  color: #1E2225;
-}
-
-.dark-mode{
-  background-color: #1E2225;
-  color: aliceblue;
-}
-
 .restaurant-img{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

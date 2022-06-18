@@ -1,43 +1,62 @@
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.flex-column{
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
 
-.unclickable{
-    pointer-events: none;
+.unclickable {
+  pointer-events: none;
 }
 
-.unclickable:hover{
-    cursor: not-allowed;
+.unclickable:hover {
+  cursor: not-allowed;
 }
 
-.btn{
-    border: none;
-    background-color: white;
+.arrow {
+  background-color: none;
 }
 
-.btn:hover{
-    cursor: pointer;
+.arrow:hover {
+  cursor: pointer;
 }
 
-.container{
-    width: 80%;
-    margin: 15px auto;
+.light-mode {
+  background-color: aliceblue;
+  color: #1e2225;
 }
 
-.title{
-    margin: 0 0 0 10%;
+.dark-mode {
+  background-color: #1e2225;
+  color: aliceblue;
 }
 
-.deals{
-    justify-content: center;
-    align-items: center;
+.container {
+  padding: 0 20px;
+  margin: 15px auto;
+  align-items: flex-start;
 }
 
-.restaurant-img{
+.title,
+.title > * {
+  margin: 0 0 0 10px;
+}
+
+.deals {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hot-deals {
+  width: auto;
+  margin: 0 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-img {
   border-radius: 10px;
   margin: 0 0 auto 0;
 
@@ -47,70 +66,50 @@
   height: auto;
 }
 
-.restaurant{
-    font-size: 0.7em;
-    margin: 10px 15px;
-    border-radius: 15px;
-    background-color: white;
-    justify-content: flex-start;
+.restaurant {
+  font-size: 0.7em;
+  margin: 10px 15px;
+  border-radius: 15px;
+  justify-content: flex-start;
+  box-shadow: 5px 8px 10px #4f4f4f;
 }
 
 /* Media Queries */
 @media (max-width: 480px) {
-    .restaurant {
-        width: 111px;
-        height: 175px;
-    }
-
-    .deals{
-        width: 10%;
-    }
+  .restaurant {
+    width: 111px;
+    height: 175px;
+  }
 }
-    
+
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
-    .restaurant {
-        width: 126px;
-        height: 200px;
-    }
-
-    .deals{
-        width: 50%;
-    }
+  .restaurant {
+    width: 126px;
+    height: 200px;
+  }
 }
-    
+
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px){
-    .restaurant {
-        width: 143px;
-        height: 225px;
-    }
-
-    .deals{
-        width: 70%;
-    }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant {
+    width: 143px;
+    height: 225px;
+  }
 }
-    
+
 /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px){
-    .restaurant {
-        width: 159px;
-        height: 250px;
-    }
-
-    .deals{
-        width: 90%;
-    }
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .restaurant {
+    width: 159px;
+    height: 250px;
+  }
 }
-    
+
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
-    .restaurant {
-        width: 175px;
-        height: 275px;
-    }
-
-    .deals{
-        width: 100%;
-    }
+  .restaurant {
+    width: 175px;
+    height: 275px;
+  }
 }

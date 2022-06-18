@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-restaurants-display',
@@ -72,8 +72,7 @@ export class RestaurantsDisplayComponent implements OnInit {
     },
   ];
 
-
-  mode = 'light-mode';
+  @Input() theme = 'light-mode';
 
   onBookTable(restaurant: any) {
     console.log(`book a table for user in:`, restaurant);

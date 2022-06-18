@@ -13,6 +13,12 @@
 
     height: 350vh; /*Have a doubt here*/
 }
+
+.hot-deals-container{
+    justify-content: center;
+    align-items: center;
+}
+
 .mode-toggle-button img{
     width:3%;
     height:8%;

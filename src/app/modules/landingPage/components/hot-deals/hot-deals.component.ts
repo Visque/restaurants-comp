@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { RestaurantsDisplayComponent } from '../restaurants-display/restaurants-display.component';
 import { HostListener } from "@angular/core";
 
@@ -8,6 +8,8 @@ import { HostListener } from "@angular/core";
   styleUrls: ['./hot-deals.component.css'],
 })
 export class HotDealsComponent implements OnInit {
+  @Input() theme = 'light-mode';
+
   screenWidth: any;
 
   start = 0;
@@ -103,18 +105,18 @@ export class HotDealsComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.screenWidth = window.innerWidth;
-    console.log("calling resize");
+    console.log('calling resize');
 
-    if (this.screenWidth < 480) {
+    if (this.screenWidth <= 480) {
       this.HotDealsLength = 1;
     }
-    if (this.screenWidth > 481 && this.screenWidth < 767) {
+    if (this.screenWidth > 481 && this.screenWidth <= 767) {
       this.HotDealsLength = 2;
     }
-    if (this.screenWidth > 768 && this.screenWidth < 1024) {
+    if (this.screenWidth > 768 && this.screenWidth <= 1024) {
       this.HotDealsLength = 3;
     }
-    if (this.screenWidth > 1025 && this.screenWidth < 1280) {
+    if (this.screenWidth > 1025 && this.screenWidth <= 1280) {
       this.HotDealsLength = 4;
     }
     if (this.screenWidth > 1281) {
@@ -130,9 +132,7 @@ export class HotDealsComponent implements OnInit {
     this.onResize();
   }
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 
   onNext() {
     if (this.start == this.restaurants.length - this.HotDealsLength) {

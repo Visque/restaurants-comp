@@ -1,23 +1,23 @@
-<div class="container" (window:resize)="onResize()" >
+<div class="container flex-column" (window:resize)="onResize()" >
 
   <div class="title">
-    <h3>Hot Deals</h3>
+    <h2>Hot Deals</h2>
   </div>
   <div class="deals flex">
-    <button class="btn left {{ prevUnclickable ? 'unclickable' : '' }}" (click)="onPrev()">
-      <img style="height: 50px; width: auto; margin: 0" src="assets/images/left.png" alt="F hogya" />
-    </button>
+    <div style="background-color: none;" class="arrow {{ prevUnclickable ? 'unclickable' : '' }}" >
+      <img (click)="onPrev()" style="height: 50px; width: auto; margin: 0" src="assets/images/left.png" alt="F hogya" />
+    </div>
     <div class="hot-deals flex">
 
-      <div class="restaurant flex-column" *ngFor="let restaurant of HotDealsRestaurants">
+      <div class="restaurant flex-column {{ theme }}" *ngFor="let restaurant of HotDealsRestaurants">
         <img class="restaurant-img" style="height: auto; width: 100%; margin: 0;" src="{{ restaurant.image }}" alt="">
         <app-restaurant-details size="small" [restaurant]="restaurant">
         </app-restaurant-details>
       </div>
 
     </div>
-    <button class="btn right {{ nextUnclickable ? 'unclickable' : '' }}" (click)="onNext()">
-      <img style="height: 50px; width: auto; margin: 0" src="assets/images/right.png" alt="F hogya" />
-    </button>
+    <div class="arrow {{ nextUnclickable ? 'unclickable' : '' }}" >
+      <img (click)="onNext()" style="height: 50px; width: auto; margin: 0" src="assets/images/right.png" alt="F hogya" />
+    </div>
   </div>
 </div>
