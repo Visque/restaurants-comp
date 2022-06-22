@@ -16,3 +16,41 @@
 .city-list img:hover{
     border: 3px solid rgba(99, 89, 89, 0.333);
 }
+@media (max-width: 480px) {
+.city-list img{
+    height: 44%;
+    width: 85%;
+}
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .city-list img{
+        height: 50%;
+        width: 85%;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .city-list img{
+        height: 65%;
+    width: 85%;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .city-list img{
+        height: 73%;
+        width: 75%;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .city-list img{
+        height: 75%;
+        width: 85%;
+    }
+}

@@ -10,14 +10,17 @@
     height: 25rem;
     opacity: 0.4;
 }
+
 .header-content{
     color: aliceblue;
     position: absolute;
-    top: 40%;
+    top: 0%;
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 25rem;
 }
+
 
 .nav-list span a{
     color:#fdf7f7;
@@ -86,7 +89,7 @@
 }
 .header-content img{
     opacity: 1;
-    height: 30vh;
+    height: 100%;
     width: 30%;
 }
 
